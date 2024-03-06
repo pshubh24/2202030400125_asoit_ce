@@ -1,0 +1,53 @@
+<!-- Add this code to your existing login.html file -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <div class="login-content">
+                <h1>Login</h1>
+            </div>
+        </div>
+
+        <form>
+            <p class="text">Enter Your Phone Number Or Email Address Below To Continue</p>
+            
+            <div class="input-container">
+                <div id="country">
+                    <img src=".\images&icon\united-states-of-america 1.png" alt="">
+                    <div class="arrow-down">&#9660;</div>
+                </div>
+                <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="Enter Your Number" required>
+            </div>
+
+            <div class="or-divider">or</div>
+
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <input type="password" id="password" name="password" placeholder="Password" required>
+
+            <div class="forgot-password">
+                <a href="#" class="fp">Forgot Password?</a>
+            </div>
+
+            <button type="submit" onclick="button1Clicked()">Login</button>
+        </form>
+        <div class="signup-link">
+            Don't have an account? <a href="#">Sign up</a>
+        </div>   
+     </div>
+
+     <script>
+         function button1Clicked() {
+            window.location.href = 'login.html';
+        }
+     </script>
+
+</body>
+</html>

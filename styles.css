@@ -1,0 +1,284 @@
+/* styles.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+}
+
+#buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.button,
+.buttonContinue {
+    padding: 12px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.button {
+    width: 200px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.buttonContinue {
+    width: 80px;
+    height: 50px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.buttonContinue img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#ContinueButtons {
+    display: flex;
+    gap: 5px;
+}
+
+/* Add styles for hover effect */
+.button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+/* Styles for Login Page */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 360px;
+    height: 100%;
+    flex-direction: column; /* Arrange items in a column for smaller screens */
+    align-items: center;
+    position: relative; /* Add relative positioning */
+}
+
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #000;
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+    border-bottom-left-radius: 30px;
+}
+
+.login-content {
+    box-sizing: border-box;
+    color: #fff;
+}
+
+/* Add this code to your existing styles.css file */
+.login-content h1 {
+    margin: 0 0 85px 0; /* Adjust the margin for top and left */
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px; /* Add padding for better visibility */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.div1 {
+    display: inline-block;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+     position: absolute; /* Set absolute positioning */
+    top: 42%; /* Center the form vertically */
+    left: 50%; /* Center the form horizontally */
+    transform: translate(-50%, -50%); /* Center the form precisely */
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#country {
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: relative;
+    margin-right: 5px;
+}
+
+#country img {
+    width: 20px;
+    height: 15px;
+    margin-right: 8px;
+}
+
+#country select {
+    appearance: none;
+    background: transparent;
+    border: none;
+    width: 100%;
+    padding: 0;
+    cursor: pointer;
+}
+
+.arrow-down {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: rgb(66, 64, 64);
+}
+
+input {
+    width: calc(100% - 30px);
+    flex: 1;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.fp {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 370px;
+    
+}
+
+.signup-link a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.or-divider {
+    text-align: center;
+    margin: 5px 0;
+    position: relative;
+}
+
+.text {
+    color: #ccc;
+    text-align: center;
+}
+
+.login {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+/* Add this to your existing styles.css or create a new one */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
+    background-color: #f4f4f4; /* Background color for the entire page */
+}
+
+img {
+    max-width: 85%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain the aspect ratio of the image */
+}

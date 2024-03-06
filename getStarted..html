@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* Add styles for hover effect */
+        .button:hover {
+            background-color: #000000;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <img id="image" src="C:\Users\Dell\OneDrive\Desktop\vs Asinment2\images&icon\fimage.png" alt="Centered Image">
+        <div id="buttons">
+            <button class="button" onclick="button1Clicked()">Login</button>
+            <button class="button" onclick="button2Clicked()">Sign Up</button>
+        </div>
+        <p style="color: #808080; margin: 10px 0; font-family: 'Poppins', sans-serif;" >or</p>
+        <div style="display: flex; align-items: center; color: #000000; font-family: 'Poppins', sans-serif;">
+            <hr style="flex: 1; margin-right: 10px;">
+            <span>Continue with</span>
+            <hr style="flex: 1; margin-left: 10px;">
+        </div>
+        <div id="ContinueButtons">
+            <button class="buttonContinue"><img src=".\images&icon\apple.png" alt="Button 2"></button>
+            <button class="buttonContinue"><img src=".\images&icon\google.png" alt="Button 2"></button>
+            <button class="buttonContinue"><img src=".\images&icon\facebook.png" alt="Button 2"></button>
+        </div>
+    </div>
+
+    <script>
+        function button1Clicked() {
+            window.location.href = 'login.html';
+        }
+    
+        function button2Clicked() {
+            window.location.href = 'sinup.html';
+        }
+    
+        // JavaScript for hover effect on buttons
+        const buttons = document.querySelectorAll('.button');
+        buttons.forEach(button => {
+            button.addEventListener('mouseenter', () => {
+                button.classList.add('hovered');
+            });
+    
+            button.addEventListener('mouseleave', () => {
+                button.classList.remove('hovered');
+            });
+        });
+    </script>
+    
+</body>
+</html>
